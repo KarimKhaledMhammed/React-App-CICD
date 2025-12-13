@@ -44,12 +44,10 @@ jobs:
         - name: Download build artifacts
           uses: actions/download-artifact@v4
           with:
-            name: react-app-build
+            name: github-pages
         - name: Setup Pages
           uses: actions/configure-pages@v5
 
-          with:
-            path: '.'
         - name: Deploy to GitHub Pages
           uses: actions/deploy-pages@v4
 

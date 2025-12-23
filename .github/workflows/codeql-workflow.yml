@@ -23,7 +23,7 @@ jobs:
     - name: lint Phase
       run:  npm run lint
       continue-on-error: true
-      
+
     - name: unit test
       run: npm run test
     - name: Building Static Files
@@ -32,7 +32,7 @@ jobs:
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
-          languages:  javascript,typescript
+          languages:  javascript
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3

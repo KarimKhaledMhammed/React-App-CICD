@@ -1,4 +1,4 @@
-FROM nginx:1.25-alpine
+FROM public.ecr.aws/nginx/nginx:1.25-alpine
 COPY dist /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
